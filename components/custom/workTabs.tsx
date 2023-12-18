@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Project from "./project";
 
@@ -23,52 +22,54 @@ const test_data = [
 
 export default function WorkTabs() {
   return (
-    <Tabs id="work" defaultValue="director">
-      <div className="block mx-auto w-fit mb-7">
-        <TabsList>
-          <TabsTrigger
-            value="director"
-            className="border-testYellow data-[state=active]:border-4 data-[state=active]:text-testYellow text-testYellow text-xl font-bold mr-3 p-2"
-          >
-            director
-          </TabsTrigger>
-          <p className="text-testYellow font-bold mx-2">|</p>
-          <TabsTrigger
-            value="choreographer"
-            className="border-testYellow data-[state=active]:border-4 data-[state=active]:text-testYellow text-testYellow text-xl font-bold ml-3 p-2"
-          >
-            choreographer
-          </TabsTrigger>
-        </TabsList>
-      </div>
-      <TabsContent value="director" className="pt-10">
-        {/* <div className="grid grid-rows-3 gap-y-24"> */}
-        <div>
-          {test_data.map((item) => {
-            return (
-              <Project
-                key={item.title}
-                title={item.title}
-                description={item.description}
-              />
-            );
-          })}
+    <div className="container py-32">
+      <Tabs id="work" defaultValue="director">
+        <div className="block mx-auto w-fit mb-7">
+          <TabsList>
+            <TabsTrigger
+              value="director"
+              className="data-[state=active]:border-testYellow border-slate-900 border-4 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold mr-3 p-2"
+            >
+              director
+            </TabsTrigger>
+            <p className="text-testYellow font-bold mx-2">|</p>
+            <TabsTrigger
+              value="choreographer"
+              className="data-[state=active]:border-testYellow border-4 border-slate-900 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold ml-3 p-2"
+            >
+              choreographer
+            </TabsTrigger>
+          </TabsList>
         </div>
-      </TabsContent>
-      <TabsContent value="choreographer" className="pt-10">
-        {/* <div className="grid grid-rows-3 gap-y-24"> */}
-        <div>
-          {test_data.map((item) => {
-            return (
-              <Project
-                key={item.title}
-                title={item.title}
-                description={item.description}
-              />
-            );
-          })}
-        </div>
-      </TabsContent>
-    </Tabs>
+        <TabsContent value="director" className="pt-10">
+          {/* <div className="grid grid-rows-3 gap-y-24"> */}
+          <div>
+            {test_data.map((item) => {
+              return (
+                <Project
+                  key={item.title}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </TabsContent>
+        <TabsContent value="choreographer" className="pt-10">
+          {/* <div className="grid grid-rows-3 gap-y-24"> */}
+          <div>
+            {test_data.map((item) => {
+              return (
+                <Project
+                  key={item.title}
+                  title={item.title}
+                  description={item.description}
+                />
+              );
+            })}
+          </div>
+        </TabsContent>
+      </Tabs>
+    </div>
   );
 }

@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <main>
       <div className="min-h-screen bg-slate-200"></div>
-      <div className="bg-slate-900 px-12 py-32">
+      <div className="bg-slate-900">
         <WorkTabs />
       </div>
       <Bio />

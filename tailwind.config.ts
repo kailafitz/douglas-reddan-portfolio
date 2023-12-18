@@ -85,7 +85,7 @@ module.exports = {
       },
       fontFamily: {
         "bellota": ["Bellota Text", "sans-serif"],
-        "expletus": ["Expletus San", "sans-serif"],
+        "expletus": ["Expletus Sans", "sans-serif"],
         "stick-no-bills": ["Stick No Bills", "sans-serif"],
       }
     },

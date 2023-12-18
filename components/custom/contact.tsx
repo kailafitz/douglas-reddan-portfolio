@@ -1,50 +1,32 @@
 import React from "react";
 
-type Props = {};
-
-const Contact = (props: Props) => {
+const Contact = () => {
   return (
-    // <div className="bg-yellow-400 pt-16 pb-16 min-h-screen flex">
-    //   <div className="md:container flex flex-row flex-grow relative">
-    //     <div className="absolute left-0 top-0 text-white text-8xl ml-8 w-3/5">
-    //       <p className="mb-2 text-left">“Lorem ipsum</p>
-    //       <p className="mb-2 text-right">dolor sit amet,</p>
-    //       <p className="mb-2 text-center">consectetur </p>
-    //       <p>adipiscing elit.”</p>
-    //     </div>
-    //     <div className="flex flex-col justify-end">
-    //       <div className="mb-9">
-    //         <p className="text-xs">instagram</p>
-    //         <p className="text-4xl">douglas_reddan</p>
-    //       </div>
-    //       <div>
-    //         <p className="text-xs">email</p>
-    //         <p className="text-4xl">douglasredda@gmail.com</p>
-    //       </div>
-    //     </div>
-    //     <div className="img w-2/5 contact-img bg-center bg-cover ml-24 h-full"></div>
-    //   </div>
-    // </div>
-    <div id="contact" className="bg-testYellow pt-16 pb-16 min-h-screen flex">
+    <div
+      id="contact"
+      className="bg-testYellow pt-16 pb-16 min-h-screen flex overflow-hidden"
+    >
       <div className="container flex flex-row flex-grow relative">
-        <div className="absolute left-0 top-0 text-white text-8xl ml-8 w-3/5 font-expletus">
+        <div className="absolute left-0 top-0 text-white text-5xl lg:text-8xl lg:ml-8 w-full lg:w-9/12 font-expletus">
           <p className="mb-2 text-left">“Lorem ipsum</p>
           <p className="mb-2 text-right">dolor sit amet,</p>
           <p className="mb-2 text-center">consectetur </p>
           <p>adipiscing elit.”</p>
         </div>
-        <div className="grid grid-cols-12 gap-x-36 w-full">
-          <div className="col-span-4 flex flex-col justify-end">
+        <div className="grid grid-cols-12 lg:gap-x-32 w-full">
+          <div className="col-span-12 lg:col-span-5 flex flex-col justify-end order-2 lg:order-1">
             <div className="mb-9">
               <p className="text-sm">instagram</p>
-              <p className="text-4xl">douglas_reddan</p>
+              <p className="break-words text-2xl lg:text-4xl">douglas_reddan</p>
             </div>
             <div>
               <p className="text-sm">email</p>
-              <p className="text-4xl">douglasreddan@gmail.com</p>
+              <p className="break-words text-2xl lg:text-4xl">
+                douglasreddan@gmail.com
+              </p>
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-12 lg:col-span-4 order-1 lg:order-2 mb-6 mobile-height lg:h-auto">
             <div className="img w-full contact-img bg-center bg-cover h-full"></div>
           </div>
         </div>
