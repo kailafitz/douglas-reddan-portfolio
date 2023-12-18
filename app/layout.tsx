@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
-import Footer from "@/components/custom/footer";
-import Navigation from "@/components/custom/navigation";
+// import Footer from "@/components/custom/footer";
+// import Navigation from "@/components/custom/navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +20,9 @@ export default function RootLayout({
   return (
     <html className="scroll-smooth" lang="en">
       <body className={inter.className}>
-        <Navigation />
+        {/* {pathname.includes("draft") && <Navigation />} */}
         {children}
-        <Footer />
+        {/* {pathname.includes("draft") && <Footer />} */}
       </body>
     </html>
   );
