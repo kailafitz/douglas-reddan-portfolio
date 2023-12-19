@@ -11,6 +11,16 @@ export default function Home() {
       <main>
         {/* <div className="min-h-screen relative bg-slate-200"> */}
         <div className="top relative bg-slate-200">
+          <video
+            className="w-full h-full object-cover"
+            muted
+            autoPlay
+            loop
+            playsInline
+          >
+            <source src="/vid.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
           <svg
             className="arrows -mb-12"
             width="123"

@@ -5,6 +5,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* .montage {} */
+
 .img {
   background-image: url("/doug.webp");
 }
@@ -20,11 +22,11 @@
 }
 
 .scale-pic-1 {
-  background-size: 800px;
+  background-size: 900px;
 }
 
 .scale-pic-3 {
-  background-size: 800px;
+  background-size: 1000px;
 }
 
 .top {
@@ -125,7 +127,6 @@
   --_i: 100%;
   transition: .3s, background-size .3s .3s;
 }
-
 
 /* @layer base {
   :root {
