@@ -7,7 +7,9 @@ const Navigation = () => {
   return (
     <div>
       <div className="container flex flex-row justify-between items-center py-5">
-        <h1 className="text-3xl font-bellota">Douglas Reddan</h1>
+        <Link href="/draft">
+          <h1 className="text-3xl font-bellota">Douglas Reddan</h1>
+        </Link>
         <MobileMenu />
 
         <div className="hidden lg:block">
