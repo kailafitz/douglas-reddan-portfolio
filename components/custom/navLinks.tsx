@@ -3,17 +3,17 @@ import React from "react";
 
 const NavLinks = () => {
   return (
-    <div className="flex flex-col lg:flex-row align-baseline flex-grow justify-end">
-      <Link href="#work" className="ml-8">
+    <div className="flex flex-col lg:flex-row align-baseline flex-grow justify-end pt-8 lg:pt-0">
+      <Link href="#work" className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg">
         Work
       </Link>
-      <Link href="#bio" className="ml-8">
+      <Link href="#bio" className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg">
         Bio
       </Link>
-      <Link href="#press" className="ml-8">
+      <Link href="#press" className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg">
         Press
       </Link>
-      <Link href="#contact" className="ml-8">
+      <Link href="#contact" className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg">
         Contact
       </Link>
     </div>

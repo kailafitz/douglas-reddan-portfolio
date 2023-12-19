@@ -21,7 +21,7 @@ export function MobileMenu() {
           ></span>
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="bg-slate-900 text-testYellow">
         <NavLinks />
       </SheetContent>
     </Sheet>
