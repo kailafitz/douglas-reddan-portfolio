@@ -4,7 +4,7 @@ const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="bg-testYellow">
-      <div className="container border-t-2 border-slate-950 pt-8 pb-3 text-center">
+      <div className="container border-t-2 border-gray-900 pt-8 pb-3 text-center">
         <p className="text-xs flex flex-row items-center justify-center">
           <svg
             className="mr-1"

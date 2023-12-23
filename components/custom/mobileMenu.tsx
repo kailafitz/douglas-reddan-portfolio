@@ -1,10 +1,20 @@
+"use client";
+
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import NavLinks from "./navLinks";
+import { useState } from "react";
 
 export function MobileMenu() {
+  const [openState, setOpenState] = useState(false);
+
+  const handleClose = () => {
+    // event.preventDefault();
+    setOpenState(false);
+  };
+
   return (
-    <Sheet>
+    <Sheet open={openState} onOpenChange={setOpenState}>
       <SheetTrigger asChild>
         <Button className="flex flex-col justify-between h-9 w-7 lg:hidden">
           <span
@@ -21,8 +31,8 @@ export function MobileMenu() {
           ></span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-slate-900 text-testYellow">
-        <NavLinks />
+      <SheetContent className="bg-gray-900 text-testYellow">
+        <NavLinks handleClose={handleClose} />
       </SheetContent>
     </Sheet>
   );

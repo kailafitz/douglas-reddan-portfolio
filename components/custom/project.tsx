@@ -31,7 +31,7 @@ const Project = (props: Props) => {
         <p className="mb-4">{props.description}</p>
         <Button
           variant="outline"
-          className="bg-transparent rounded-none border-4 border-current text-lg font-semibold"
+          className="bg-transparent rounded-none border-4 border-current text-lg font-semibold btn-animation"
         >
           Learn More
         </Button>

@@ -31,14 +31,14 @@ export default function WorkTabs() {
           <TabsList>
             <TabsTrigger
               value="director"
-              className="data-[state=active]:border-testYellow border-slate-900 border-4 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold mr-3 p-2"
+              className="data-[state=active]:border-testYellow border-gray-900 border-4 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold mr-3 p-2"
             >
               director
             </TabsTrigger>
             <p className="text-testYellow font-bold mx-2">|</p>
             <TabsTrigger
               value="choreographer"
-              className="data-[state=active]:border-testYellow border-4 border-slate-900 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold ml-3 p-2"
+              className="data-[state=active]:border-testYellow border-4 border-gray-900 data-[state=active]:text-testYellow text-testYellow text-xl font-semibold ml-3 p-2"
             >
               choreographer
             </TabsTrigger>
