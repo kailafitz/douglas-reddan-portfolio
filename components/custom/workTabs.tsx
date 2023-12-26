@@ -26,7 +26,7 @@ const test_data = [
 export default function WorkTabs() {
   return (
     <div className="container py-32">
-      <Tabs id="work" defaultValue="director">
+      <Tabs defaultValue="director">
         <div className="block mx-auto w-fit mb-7">
           <TabsList>
             <TabsTrigger

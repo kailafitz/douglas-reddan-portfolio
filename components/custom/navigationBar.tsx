@@ -3,7 +3,7 @@ import React from "react";
 import NavLinks from "./navLinks";
 import { MobileMenu } from "./mobileMenu";
 
-const Navigation = () => {
+const NavigationBar = () => {
   return (
     <div>
       <div className="container flex flex-row justify-between items-center py-5">
@@ -20,4 +20,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default NavigationBar;

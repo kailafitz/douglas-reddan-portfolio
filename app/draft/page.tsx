@@ -2,28 +2,31 @@ import Bio from "@/components/custom/bio";
 import Brands from "@/components/custom/brands";
 import Contact from "@/components/custom/contact";
 import Footer from "@/components/custom/footer";
-import Navigation from "@/components/custom/navigation";
+import NavigationBar from "@/components/custom/navigationBar";
 import WorkTabs from "@/components/custom/workTabs";
 import Link from "next/link";
 
 export default function Home() {
   return (
     <>
-      <Navigation />
+      <NavigationBar />
       <main>
-        {/* <div className="min-h-screen relative bg-gray-900-200"> */}
-        <div className="top relative bg-gray-900-200">
-          <video
-            className="w-full h-full object-cover"
-            muted
-            autoPlay
-            loop
-            playsInline
-          >
-            <source src="/vid.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-          <Link href="#work">
+        <div className="min-h-90vh bg-fuchsia-900 relative">
+          <div className="animating-container top relative bg-gray-900 ">
+            <h3 className="text-6xl text-yellow-600 opening-text">
+              Opening Animation
+            </h3>
+            <video
+              className="w-full h-full object-cover opening-montage"
+              muted
+              autoPlay
+              loop
+              playsInline
+            >
+              <source src="/vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            {/* <Link href="#work">
             <svg
               className="arrows -mb-12"
               width="123"
@@ -51,9 +54,10 @@ export default function Home() {
                 strokeWidth="8"
               />
             </svg>
-          </Link>
+          </Link> */}
+          </div>
         </div>
-        <div className="bg-gray-900">
+        <div id="work" className="bg-gray-900">
           <WorkTabs />
         </div>
         <Brands />

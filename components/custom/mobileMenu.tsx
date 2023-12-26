@@ -9,7 +9,6 @@ export function MobileMenu() {
   const [openState, setOpenState] = useState(false);
 
   const handleClose = () => {
-    // event.preventDefault();
     setOpenState(false);
   };
 
@@ -31,7 +30,10 @@ export function MobileMenu() {
           ></span>
         </Button>
       </SheetTrigger>
-      <SheetContent className="bg-gray-900 text-testYellow">
+      <SheetContent
+        onCloseAutoFocus={(event) => event.preventDefault()}
+        className="bg-gray-900 text-testYellow"
+      >
         <NavLinks handleClose={handleClose} />
       </SheetContent>
     </Sheet>
