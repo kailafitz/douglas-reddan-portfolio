@@ -5,7 +5,7 @@ import { MobileMenu } from "./mobileMenu";
 
 const NavigationBar = () => {
   return (
-    <div>
+    <nav>
       <div className="container flex flex-row justify-between items-center py-5">
         <Link href="/draft">
           <h1 className="text-3xl font-bellota">Douglas Reddan</h1>
@@ -16,7 +16,7 @@ const NavigationBar = () => {
           <NavLinks />
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

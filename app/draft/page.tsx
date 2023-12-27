@@ -10,23 +10,26 @@ export default function Home() {
   return (
     <>
       <NavigationBar />
-      <main>
-        <div className="min-h-90vh bg-fuchsia-900 relative">
-          <div className="animating-container top relative bg-gray-900 ">
-            <h3 className="text-6xl text-yellow-600 opening-text">
-              Opening Animation
-            </h3>
-            <video
-              className="w-full h-full object-cover opening-montage"
-              muted
-              autoPlay
-              loop
-              playsInline
-            >
-              <source src="/vid.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            {/* <Link href="#work">
+      <div className="min-h-90vh bg-fuchsia-900 relative">
+        <div className="animating-container top relative bg-gray-900 ">
+          <h3 className="text-6xl opening-text">
+            Logo Animation
+            {/* <div className="word1 text-5xl text-gray-900">Director</div>
+            <div className="word2 text-5xl text-gray-900">Choreographer</div> */}
+            {/* <div className="word3 text-5xl text-gray-900">Douglas Reddan</div> */}
+          </h3>
+
+          <video
+            className="w-full h-full object-cover opening-montage"
+            muted
+            autoPlay
+            loop
+            playsInline
+          >
+            <source src="/vid.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <Link href="#work">
             <svg
               className="arrows -mb-12"
               width="123"
@@ -54,16 +57,15 @@ export default function Home() {
                 strokeWidth="8"
               />
             </svg>
-          </Link> */}
-          </div>
+          </Link>
         </div>
-        <div id="work" className="bg-gray-900">
-          <WorkTabs />
-        </div>
-        <Brands />
-        <Bio />
-        <Contact />
-      </main>
+      </div>
+      <div id="work" className="bg-gray-900">
+        <WorkTabs />
+      </div>
+      <Brands />
+      <Bio />
+      <Contact />
       <Footer />
     </>
   );

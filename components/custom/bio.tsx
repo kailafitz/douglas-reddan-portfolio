@@ -4,11 +4,11 @@ const Bio = () => {
   return (
     <div id="bio" className="my-24 lg:my-32">
       <div className="grid mobile-template-grid lg:grid-rows-none grid-cols-12 lg:gap-x-9 lg:h-96 justify-between">
-        <div className="bg-cover scale-pic-1 h-96 lg:h-auto img col-span-8 bg-center lg:bg-right-top"></div>
+        <div className="bg-cover scale-pic-1 h-96 lg:h-auto img col-span-8 lg:col-span-4 bg-center lg:bg-right-top"></div>
         <div className="col-span-4 h-96 lg:hidden"></div>
         <div className="bg-cover h-96 lg:h-auto img col-span-12 lg:col-span-6"></div>
         <div className="col-span-2 h-96 lg:hidden"></div>
-        <div className="bg-cover scale-pic-3 h-96 lg:h-auto img col-span-10 bg-center"></div>
+        <div className="bg-cover scale-pic-3 h-96 lg:h-auto img col-span-10 lg:col-span-2 bg-center"></div>
       </div>
       <div className="container pt-12">
         <div className="grid grid-cols-12 gap-y-12 lg:gap-x-12 w-full">

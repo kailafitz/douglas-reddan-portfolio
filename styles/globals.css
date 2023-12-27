@@ -5,33 +5,100 @@
 @tailwind components;
 @tailwind utilities;
 
-.min-h-90vh {
-  min-height: 90vh;
+nav {
+  height: 11.5vh;
 }
 
-.opening-container {
-  min-height: 100vh;
-  z-index: 0;
-  position: relative;
+.min-h-90vh {
+  min-height: 88.5vh;
 }
 
 .animating-container {
   width: 100vw;
   height: 90vh;
-  animation: overlay-to-block 6s linear 1 normal;
+  animation: overlay-to-block 10s linear 1 normal;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.opening-text {
-  position: absolute;
+.animating-container a {
   opacity: 0;
-  width: 100vw;
+  animation: main-content-to-show 4s linear 6s 1 normal forwards;
+}
+
+.opening-text {
+  /* position: relative; */
+  position: absolute;
+  animation: overlay-content-to-fade 4s linear 6s 1 normal forwards;
+  opacity: 1;
+  font-weight: 900;
+  width: 100%;
+  z-index: 3;
+  color: white;
+  display: block;
   text-align: center;
-  z-index: -999;
-  animation: overlay-content-to-fade 6s linear 1 normal;
+  /* overflow: hidden; */
+  /* text-align: left; */
+  /* height: 60px; */
+}
+
+.word1,
+.word2,
+.word3 {
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  width: 0;
+  background-color: yellow;
+  z-index: 5;
+}
+
+.word1 {
+  animation: openClose 1s linear 1s 1 normal;
+}
+
+.word2 {
+  animation: openClose 1s linear 2s 1 normal;
+}
+
+.word3 {
+  animation: openClose 1s linear 3s 1 normal;
+}
+
+@keyframes openClose {
+  0% {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    width: 0%;
+  }
+
+  50% {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    width: 100%;
+  }
+
+  80% {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    width: 100%;
+  }
+
+  99% {
+    opacity: 1;
+  }
+
+  100% {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 0%;
+  }
 }
 
 .opening-montage {
@@ -39,11 +106,7 @@
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: main-content-to-show 4s linear 2s 1 normal forwards;
-}
-
-nav {
-  height: 10vh;
+  animation: main-content-to-show 4s linear 6s 1 normal forwards;
 }
 
 @keyframes overlay-to-block {
@@ -53,8 +116,14 @@ nav {
     bottom: 0;
   }
 
+  70% {
+    height: 100vh;
+    position: absolute;
+    bottom: 0;
+  }
+
   99% {
-    height: 90vh;
+    height: 88.5vh;
     position: absolute;
     bottom: 0;
   }
