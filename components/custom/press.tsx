@@ -37,9 +37,12 @@ const Press = () => {
       id="press"
       className="container flex flex-col lg:flex-row flex-wrap justify-between pb-16"
     >
-      {articles.map((article) => {
+      {articles.map((article, i) => {
         return (
-          <Card className="max-card-width bg-primary border-l-4 border-t-0 border-b-0 border-r-0 border-slate-900 flex flex-col justify-between">
+          <Card
+            key={i}
+            className="max-card-width bg-primary border-l-4 border-t-0 border-b-0 border-r-0 border-slate-900 flex flex-col justify-between"
+          >
             <CardHeader className="mb-3 pt-0">
               <CardTitle className="text-md font-semibold mb-1">
                 {article.title}
