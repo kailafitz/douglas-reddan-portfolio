@@ -67,6 +67,7 @@ export default function Home() {
       </div>
       <Brands />
       <Bio />
+      <Press />
       <Contact />
       <Footer />
       <ScrollTop />

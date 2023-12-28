@@ -15,7 +15,7 @@ export function MobileMenu() {
   return (
     <Sheet open={openState} onOpenChange={setOpenState}>
       <SheetTrigger asChild>
-        <Button className="flex flex-col justify-between h-9 w-7 lg:hidden">
+        <Button className="bg-white flex flex-col justify-between h-9 w-7 lg:hidden">
           <span
             className="bg-black"
             style={{ width: "inherit", height: "2.5px" }}

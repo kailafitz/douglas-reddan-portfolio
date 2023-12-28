@@ -1,5 +1,4 @@
 import React from "react";
-import Press from "./press";
 
 const Contact = () => {
   return (
@@ -37,8 +36,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-
-      <Press />
     </div>
   );
 };

@@ -7,7 +7,7 @@ const Brands = () => {
         return (
           <p
             key={brand}
-            className="opacity-50 font-bold text-3xl lg:text-7xl font-bellota my-4 px-4"
+            className="opacity-50 font-bold text-3xl lg:text-7xl font-expletus my-4 px-4"
           >
             Brand
           </p>
