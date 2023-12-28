@@ -34,7 +34,7 @@ const NavLinks = (props: Props) => {
           <Link
             key={i}
             href={link.anchor}
-            className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg btn-animation"
+            className="ml-8 mb-3 lg:mb-0 text-xl lg:text-lg btn-animation-primary"
             onClick={() => {
               handleAnchorScroll(link.anchor);
               props.handleClose ? props.handleClose() : undefined;

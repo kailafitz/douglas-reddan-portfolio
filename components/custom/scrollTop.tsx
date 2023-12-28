@@ -10,7 +10,7 @@ const ScrollTop = () => {
   if (typeof window !== "undefined") {
     window.addEventListener("scroll", () => {
       setDisplayScrollButton(
-        window.scrollY > 200 ? "block opacity-100" : "opacity-0 hidden"
+        window.scrollY > 500 ? "block opacity-100" : "opacity-0 hidden"
       );
     });
   }

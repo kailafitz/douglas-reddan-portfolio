@@ -3,6 +3,7 @@ import Brands from "@/components/custom/brands";
 import Contact from "@/components/custom/contact";
 import Footer from "@/components/custom/footer";
 import NavigationBar from "@/components/custom/navigationBar";
+import Press from "@/components/custom/press";
 import ScrollTop from "@/components/custom/scrollTop";
 import WorkTabs from "@/components/custom/workTabs";
 import Link from "next/link";
@@ -11,7 +12,7 @@ export default function Home() {
   return (
     <>
       <NavigationBar />
-      <div className="min-h-90vh bg-fuchsia-900 relative">
+      <div className="min-h-90vh bg-slate-900 relative">
         <div className="animating-container top relative bg-gray-900 ">
           <h3 className="text-6xl opening-text">
             Logo Animation
