@@ -13,8 +13,8 @@ const Contact = () => {
           <p className="mb-2 text-center">consectetur </p>
           <p>adipiscing elit.”</p>
         </div>
-        <div className="grid grid-cols-12 lg:gap-x-32 w-full">
-          <div className="col-span-12 lg:col-span-5 flex flex-col justify-end order-2 lg:order-1">
+        <div className="grid grid-cols-12 w-full">
+          <div className="col-span-12 lg:col-span-8 flex flex-col justify-end order-2 lg:order-1">
             <div className="mb-9">
               <p className="text-sm">instagram</p>
               <p className="break-words text-2xl lg:text-4xl">douglas_reddan</p>
@@ -26,6 +26,7 @@ const Contact = () => {
               </p>
             </div>
           </div>
+          {/* <div className="lg:col-span-2"></div> */}
           <div className="col-span-12 lg:col-span-4 order-1 lg:order-2 mb-6 mobile-height lg:h-auto">
             <div className="img w-full contact-img bg-center bg-cover h-full"></div>
           </div>

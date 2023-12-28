@@ -3,6 +3,7 @@ import Brands from "@/components/custom/brands";
 import Contact from "@/components/custom/contact";
 import Footer from "@/components/custom/footer";
 import NavigationBar from "@/components/custom/navigationBar";
+import ScrollTop from "@/components/custom/scrollTop";
 import WorkTabs from "@/components/custom/workTabs";
 import Link from "next/link";
 
@@ -67,6 +68,7 @@ export default function Home() {
       <Bio />
       <Contact />
       <Footer />
+      <ScrollTop />
     </>
   );
 }

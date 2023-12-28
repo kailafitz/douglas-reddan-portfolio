@@ -1,15 +1,13 @@
 import React from "react";
 
-type Props = {};
-
-const Brands = (props: Props) => {
+const Brands = () => {
   return (
-    <div className="container flex flex-row flex-wrap justify-around mt-24">
+    <div className="container flex flex-row flex-wrap justify-around mt-32">
       {[1, 2, 3, 4, 5].map((brand) => {
         return (
           <p
             key={brand}
-            className="opacity-50 font-bold text-3xl lg:text-7xl font-bellota mb-8 px-4"
+            className="opacity-50 font-bold text-3xl lg:text-7xl font-bellota my-4 px-4"
           >
             Brand
           </p>

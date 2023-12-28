@@ -6,16 +6,16 @@
 @tailwind utilities;
 
 nav {
-  height: 11.5vh;
+  height: 12vh;
 }
 
 .min-h-90vh {
-  min-height: 88.5vh;
+  min-height: 88vh;
 }
 
 .animating-container {
   width: 100vw;
-  height: 90vh;
+  height: 88vh;
   animation: overlay-to-block 10s linear 1 normal;
   display: flex;
   flex-direction: column;
@@ -163,6 +163,14 @@ nav {
     z-index: 3;
     opacity: 1;
   }
+}
+
+.transition-opacity {
+  transition: opacity 1s linear .3s;
+}
+
+.transform-180 {
+  transform: rotate(180deg);
 }
 
 .img {

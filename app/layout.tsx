@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html className="scroll-smooth" lang="en">
+    <html className="scroll-smooth relative" lang="en">
       <body className={inter.className}>
         {/* {pathname.includes("draft") && <Navigation />} */}
         {children}
