@@ -156,14 +156,14 @@ nav {
     z-index: 10;
   }
 
-  85% {
+  /* 85% {
     height: 100vh;
     position: fixed;
     bottom: 0;
     z-index: 10;
-  }
+  } */
 
-  99% {
+  29% {
     height: 88vh;
     position: fixed;
     bottom: 0;
