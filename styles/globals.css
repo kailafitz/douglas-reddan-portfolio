@@ -148,6 +148,36 @@ nav {
   }
 }
 
+@keyframes overlay-to-block-1 {
+  0% {
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  92% {
+    height: 100vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  99% {
+    height: 88vh;
+    position: fixed;
+    bottom: 0;
+    z-index: 999;
+  }
+
+  100% {
+    height: 88vh;
+    position: relative;
+    z-index: 999;
+    bottom: 0;
+  }
+}
+
 @keyframes overlay-content-to-fade {
   0% {
     z-index: 3;
