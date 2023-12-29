@@ -25,7 +25,7 @@ nav {
 
 .animating-container-1 {
   width: 100vw;
-  height: 88vh;
+  height: 60vh;
   animation: overlay-to-block-1 6s linear 1 normal;
   display: flex;
   flex-direction: column;
