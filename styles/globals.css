@@ -25,7 +25,7 @@ nav {
 
 .animating-container-1 {
   width: 100vw;
-  height: 88vh;
+  height: 100vh;
   animation: overlay-to-block-1 6s linear 1 normal;
   display: flex;
   flex-direction: column;
@@ -135,14 +135,14 @@ nav {
   }
 
   99% {
-    height: 88.5vh;
+    height: 88vh;
     position: fixed;
     bottom: 0;
     z-index: 999;
   }
 
   100% {
-    height: 88.5vh;
+    height: 88vh;
     position: relative;
     z-index: 999;
   }
@@ -158,11 +158,11 @@ nav {
   }
 
   99% {
-    height: 88.5vh;
+    height: 88vh;
   }
 
   100% {
-    height: 88.5vh;
+    height: 88vh;
   }
 }
 
