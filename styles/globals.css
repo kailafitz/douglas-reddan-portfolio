@@ -23,7 +23,7 @@ nav {
   text-align: center;
 }
 
-.animating-container {
+.animating-container-1 {
   width: 100vw;
   height: 88vh;
   animation: overlay-to-block-1 6s linear 1 normal;
