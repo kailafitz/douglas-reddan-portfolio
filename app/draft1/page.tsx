@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <NavigationBar />
-      <div className="min-h-90vh bg-slate-900 fixed z-30">
+      <div className="min-h-90vh bg-slate-900 fixed z-30 top-0">
         <div className="animating-container-1 top relative bg-gray-900 ">
           <h3 className="text-6xl opening-text">
             Logo Animation
