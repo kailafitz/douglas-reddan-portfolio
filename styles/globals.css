@@ -13,6 +13,10 @@ nav {
   min-height: 88vh;
 }
 
+.min-h-60vh {
+  min-height: 60vh;
+}
+
 .animating-container {
   width: 100vw;
   height: 88vh;
