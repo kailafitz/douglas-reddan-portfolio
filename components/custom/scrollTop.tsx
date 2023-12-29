@@ -20,7 +20,7 @@ const ScrollTop = () => {
   return (
     <Link
       className={cn(
-        "bottom-5 right-5 z-10 fixed text-testRed transition-opacity",
+        "bottom-5 right-5 z-10 fixed text-testRed opacity-0 transition-opacity",
         displayScrollButton
       )}
       onClick={() => handleAnchorScroll("#top")}
