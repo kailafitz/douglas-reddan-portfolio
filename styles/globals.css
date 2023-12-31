@@ -152,21 +152,21 @@ nav {
   0% {
     height: 100vh;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 999;
   }
 
   92% {
     height: 100vh;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 999;
   }
 
   99% {
     height: 88vh;
     position: fixed;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 999;
   }
 
