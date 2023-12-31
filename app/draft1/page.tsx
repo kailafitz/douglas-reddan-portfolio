@@ -62,7 +62,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div id="work" className="bg-gray-900">
+      {/* <div id="work" className="bg-gray-900">
         <WorkTabs />
       </div>
       <Brands />
@@ -70,7 +70,7 @@ export default function Home() {
       <Press />
       <Contact />
       <Footer />
-      <ScrollTop />
+      <ScrollTop /> */}
     </>
   );
 }
