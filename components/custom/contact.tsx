@@ -2,11 +2,8 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="bg-testYellow">
-      <div
-        id="contact"
-        className="bg-testYellow pt-16 pb-16 min-h-screen flex flex-col overflow-hidden"
-      >
+    <div id="contact" className="bg-testYellow">
+      <div className="pt-16 pb-16 min-h-screen flex flex-col overflow-hidden">
         <div className="container flex flex-row flex-grow relative">
           <div className="absolute left-0 top-0 text-white text-5xl lg:text-8xl lg:ml-8 w-full lg:w-9/12 font-expletus">
             <p className="mb-2 text-left">“Lorem ipsum</p>
@@ -29,7 +26,6 @@ const Contact = () => {
                 </p>
               </div>
             </div>
-            {/* <div className="lg:col-span-2"></div> */}
             <div className="col-span-12 lg:col-span-4 order-1 lg:order-2 mb-6 mobile-height lg:h-auto">
               <div className="img w-full contact-img bg-center bg-cover h-full"></div>
             </div>

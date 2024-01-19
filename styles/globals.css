@@ -13,6 +13,24 @@ nav {
   min-height: 88vh;
 }
 
+body {
+  animation: disable-scroll-during-opening-animation 6s;
+}
+
+@keyframes disable-scroll-during-opening-animation {
+  0% {
+    overflow: hidden;
+  }
+
+  99% {
+    overflow: hidden;
+  }
+
+  100% {
+    overflow: scroll;
+  }
+}
+
 .animating-container {
   width: 100vw;
   height: 88vh;
@@ -209,7 +227,7 @@ nav {
 }
 
 .transition-opacity {
-  transition: opacity 1s linear .3s;
+  transition: opacity .2s linear .2s;
 }
 
 .transform-180 {
@@ -247,8 +265,6 @@ nav {
 } */
 
 .arrows {
-  width: 100px;
-  height: 120px;
   position: absolute;
   left: calc(50% - 50px);
   bottom: 0;
@@ -280,10 +296,8 @@ nav {
   }
 }
 
-@-webkit-keyframes arrow
-
 /*Safari and Chrome*/
-  {
+@-webkit-keyframes arrow {
   0% {
     opacity: 0
   }
@@ -301,22 +315,19 @@ nav {
   }
 }
 
-.arrows path.a1 {
-  animation-delay: -1s;
-  -webkit-animation-delay: -1s;
-  /* Safari 和 Chrome */
+.arrows path:first-of-type {
+  animation-delay: .1s;
+  -webkit-animation-delay: .1s;
 }
 
-.arrows path.a2 {
+.arrows path:nth-of-type(2) {
   animation-delay: -0.5s;
   -webkit-animation-delay: -0.5s;
-  /* Safari 和 Chrome */
 }
 
-.arrows path.a3 {
-  animation-delay: 0s;
-  -webkit-animation-delay: 0s;
-  /* Safari 和 Chrome */
+.arrows path:last-of-type {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s;
 }
 
 .btn-animation-primary {
